@@ -1,4 +1,4 @@
-FROM golang:1.17.5
+FROM golang:1.20
 WORKDIR /go/src/app
 
 RUN go mod download -x \
