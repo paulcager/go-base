@@ -30,7 +30,6 @@ RUN go mod download -x \
 	golang.org/x/sys@v0.29.0 \
 	golang.org/x/text@v0.21.0 \
 	google.golang.org/api@v0.214.0 \
-	google.golang.org/genproto/googleapis/rpc@v0.0.0-20241127162253-b657c2e15b81 \
 	google.golang.org/grpc@v1.75.1 \
 	google.golang.org/protobuf@v1.36.10 \
 	go.opencensus.io@v0.24.0 \
