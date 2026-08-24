@@ -9,7 +9,7 @@ This repository provides a base Docker image for Go development. Its primary pur
 ## Architecture
 
 The project is intentionally minimal - it consists only of a Dockerfile that:
-1. Uses an official Golang base image (currently 1.21.0)
+1. Uses an official Golang base image (currently 1.27.0)
 2. Pre-downloads commonly used Go modules via `go mod download`
 3. Caches these dependencies in the image layers
 
@@ -23,7 +23,7 @@ docker build -t go-base .
 
 To build with a specific tag:
 ```bash
-docker build -t go-base:1.21.0 .
+docker build -t go-base:1.27.0 .
 ```
 
 ## Using This Image
@@ -44,6 +44,6 @@ package@version \
 ## Go Version Updates
 
 When updating the Go version:
-1. Update the FROM line in Dockerfile (currently `FROM golang:1.21.0`)
+1. Update the FROM line in Dockerfile (currently `FROM golang:1.27.0`)
 2. Consider reviewing the pre-loaded dependencies for compatibility
 3. Rebuild and test the image
